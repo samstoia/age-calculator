@@ -48,4 +48,10 @@ describe ("Galactic", function() {
   it("should tell user how many years they have left to live on jupiter based on average WHO earth life expectancy", function() {
       expect(testObject.getJupiterRemainingYears()).toEqual(3);
   });
+
+  it("should tell user who has lived past life expectancy how many years they have lived past the WHO world life expectancy", function() {
+    let testBirthDate = "19000101";
+    let testObject = new Galactic(testBirthDate)
+    expect(testObject.earthYearsPastLifeExpectancy()).toEqual("You have lived 47 years past the average earthling")
+  });
 });
