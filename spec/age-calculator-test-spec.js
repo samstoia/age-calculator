@@ -8,6 +8,28 @@ describe ("Galactic", function() {
     expect(testObject.getEarthAge()).toEqual(32)
   });
 
+  it("should return the user's mercury age", function() {
+      let testBirthDate = "19871010";
+      let testObject = new Galactic(testBirthDate)
+      expect(testObject.getMercuryAge()).toEqual(133)
+  });
+
+  it("should return the user's venus age", function() {
+      let testBirthDate = "19871010";
+      let testObject = new Galactic(testBirthDate)
+      expect(testObject.getVenusAge()).toEqual(51)
+  });
+
+  it("should return the user's mars age", function() {
+      let testBirthDate = "19871010";
+      let testObject = new Galactic(testBirthDate)
+      expect(testObject.getMarsAge()).toEqual(17)
+  });
+  it("should return the user's jupiter age", function() {
+      let testBirthDate = "19871010";
+      let testObject = new Galactic(testBirthDate)
+      expect(testObject.getJupiterAge()).toEqual(2)
+  });
 });
 
 
