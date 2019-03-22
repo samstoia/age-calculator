@@ -31,15 +31,35 @@ export default class Galactic {
     return Math.floor((today.getFullYear() - this.year) / 11.86);
   }
 
+  getEarthRemainingYears() {
+    const earthLifeExpect = 71.5;
+    return Math.floor(earthLifeExpect - this.getEarthAge());
+  }
+
+  getMercuryRemainingYears() {
+    const earthLifeExpect = 71.5;
+    return Math.floor((earthLifeExpect - this.getEarthAge()) / .24);
+  }
+
+  getVenusRemainingYears() {
+    const earthLifeExpect = 71.5;
+    return Math.floor((earthLifeExpect - this.getEarthAge()) / .62);
+  }
+
+  getMarsRemainingYears() {
+    const earthLifeExpect = 71.5;
+    return Math.floor((earthLifeExpect - this.getEarthAge()) / 1.88);
+  }
+
+  getJupiterRemainingYears() {
+    const earthLifeExpect = 71.5;
+    return Math.floor((earthLifeExpect - this.getEarthAge()) / 11.86);
+  }
 }
 
 
-// export function getJupiterAge(birthDate) {
-//   let age = getEarthAge(birthDate);
-//   let jupiterAge = Math.floor(age / 11.86);
-//   return jupiterAge;
-// }
-//
+
+
 // export function getEarthRemainingYears(birthDate) {
 //   let age = getEarthAge(birthDate);
 //   const earthLifeExpect = 71.5;
